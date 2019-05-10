@@ -14,9 +14,5 @@ public interface AccountInterface {
     public abstract void setAccountNumber(int accountNumber);
     public abstract void getPin();
     public abstract void setPin(int pin);
-    public abstract void getAvailableBalance();
-    public abstract void setAvailableBalance(double availableBalance);
-    public abstract void getTotalBalance();
-    public abstract void setTotalBalance(double totalBalance);
     
 }
