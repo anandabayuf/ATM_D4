@@ -11,8 +11,5 @@ package com.appl.atm.model;
  */
 public interface AccountInterface {
     public abstract int getAccountNumber();
-    public abstract void setAccountNumber(int accountNumber);
-    public abstract int getPin();
-    public abstract void setPin(int pin);
-    
+    public boolean authenticatePin(int inputPin);
 }

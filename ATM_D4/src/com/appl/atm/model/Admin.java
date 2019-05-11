@@ -12,10 +12,12 @@ public class Admin implements AccountInterface{
         pin=0000;
     }
 
+    @Override
     public int getAccountNumber(){
         return this.accountNumber;
     }
 
+    @Override
     public boolean authenticatePin(int inputPin){
         return (this.pin==inputPin);
     }
