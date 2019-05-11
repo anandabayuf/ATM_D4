@@ -9,6 +9,10 @@ package com.appl.atm.model;
  *
  * @author Riyanzani
  */
-public class MasaDepan  {
+public class MasaDepan extends Costumer {
+    
+    public MasaDepan(int accountNumber, int pin, double availableBalance, double totalBalance) {
+        super(accountNumber, pin, availableBalance, totalBalance);
+    }
     
 }
