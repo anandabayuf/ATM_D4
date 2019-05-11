@@ -10,9 +10,9 @@ package com.appl.atm.model;
  * @author Ananda Bayu
  */
 public interface AccountInterface {
-    public abstract void getAccountNumber();
+    public abstract int getAccountNumber();
     public abstract void setAccountNumber(int accountNumber);
-    public abstract void getPin();
+    public abstract int getPin();
     public abstract void setPin(int pin);
     
 }
