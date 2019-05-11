@@ -27,17 +27,14 @@ public abstract class Costumer implements AccountInterface{
         return accountNumber;
     }
 
-    @Override
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    @Override
     public int getPin() {
         return pin;
     }
 
-    @Override
     public void setPin(int pin) {
         this.pin = pin;
     }
@@ -74,4 +71,9 @@ public abstract class Costumer implements AccountInterface{
         availableBalance-=amount;
         totalBalance-=amount;
    }
+   
+   @Override
+    public boolean authenticatePin(int inputPin){
+        return (this.pin==inputPin);
+    }
 }
