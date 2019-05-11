@@ -61,4 +61,17 @@ public abstract class Costumer implements AccountInterface{
         this.totalBalance = totalBalance;
     }
     
+    public void credit(double amount) {
+      totalBalance+=amount;
+   }
+   
+   public void credit2(double amount) {
+      availableBalance+=amount;
+      totalBalance+=amount;
+   }
+   
+   public void debit(double amount) {
+        availableBalance-=amount;
+        totalBalance-=amount;
+   }
 }
