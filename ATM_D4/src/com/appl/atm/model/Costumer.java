@@ -11,10 +11,11 @@ package com.appl.atm.model;
  */
 public abstract class Costumer implements AccountInterface{
 
-    private int accountNumber; // account number
-    private int pin; // PIN for authentication
-    private double availableBalance; // funds available for withdrawal
-    private double totalBalance; // funds available & pending deposits
+    private int accountNumber;
+    private int pin; 
+    private double availableBalance; 
+    private double totalBalance; 
+    
     public Costumer(int accountNumber, int pin,double availableBalance, double totalBalance){
         this.accountNumber = accountNumber;
         this.pin = pin;
